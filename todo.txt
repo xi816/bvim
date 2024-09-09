@@ -1,0 +1,12 @@
+Registers:
+  00h-0Fh -- r0-15 (general purpose 32-bit);
+  10h -- SP (stack pointer);
+  11h -- BP (base pointer);
+  12h -- IP (instruction pointer);
+  13h-17h -- FLAGS:
+    13h -- Zero flag
+    14h -- Overflow flag
+    15h -- Return flag
+    16h -- Data segment start
+    17h -- Constant segment start
+  20h-2Fh -- e0-15 (general purpose 32-bit);

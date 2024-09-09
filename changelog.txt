@@ -1,0 +1,6 @@
+Dev 0.01 build 10 (initial): WARNING: IN DEVELOPMENT
+
+Dev 0.01 build 50 (0.0150): ERROR: NOT FINISHED
+	Added custom memory size support with `-M` flag (-M 40 for bytes, 40K for kilobytes, 40M for megabytes, and 40G for gigabytes);
+	New instructions (at docs/instructions.txt);
+	New register markup (at docs/registers.txt);

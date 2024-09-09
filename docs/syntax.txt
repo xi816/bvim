@@ -1,0 +1,26 @@
+00 -- NOP;
+01 -- ADD;
+  01 01 02 -- ADD $R1 $R2;
+02 -- SUB;
+  02 01 02 -- SUB $R1 $R2;
+03 -- MUL;
+  03 01 02 -- MUL $R1 $R2;
+04 -- RMUL;
+  04 01 02 06 -- RMUL $R1 $R2 $R6;
+05 -- DIV;
+  05 01 02 -- DIV $R1 $R2;
+06 -- RDIV;
+  06 01 02 06 -- RDIV $R1 $R2 $R6;
+07 -- MOV *MOV16;
+  07 01 69 42 -- MOV $R1 %16x6942;
+08 -- MOV *MOV32;
+  08 01 DE AD C0 FE -- MOV $R1 %32xDEADC0FE;
+09 -- LOD;
+	09 02 00 00 69 62 -- LOD $R2 %32x00006962;
+0A -- SAV;
+20 -- SYSCALL;
+  $R7 -- 00:
+    [$R8]EXIT;
+  $R7 -- 01;
+    [file $R8, pointer $R9, size $R10]WRITE;
+7F -- EOF;
