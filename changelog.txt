@@ -1,6 +1,13 @@
-Dev 0.01 build 10 (initial): WARNING: IN DEVELOPMENT
+Dev 0.01 build 10 (initial);
 
-Dev 0.01 build 50 (0.0150): ERROR: NOT FINISHED
+Dev 0.01 build 50 (0.0150):
 	Added custom memory size support with `-M` flag (-M 40 for bytes, 40K for kilobytes, 40M for megabytes, and 40G for gigabytes);
-	New instructions (at docs/instructions.txt);
+	New instructions (at docs/instructions.txt):
+		NOP, ADD, SUB, MUL, DIV, MOV *MOV16 *MOV32
 	New register markup (at docs/registers.txt);
+
+Dev 0.01 build 71 (0.0171):
+	Custom memory size is now using `-MB` (bytes), `-MK` (kilobytes), `-MM` (megabytes) flags;
+	New instructions (at docs/instructions.txt):
+		RMUL, RDIV
+	Added PUTC syscall to write a character to the screen.
